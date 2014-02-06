@@ -11,32 +11,45 @@ Install
 Quick Overview
 --------------
 
-The function returns a color map you can use to map original pixels to the reduced palette.
-
-###Example
+###Usage
 
 `````javascript
 
 var quantize = require('quantize');
 
-// array of pixels as [R,G,B] arrays
 var arrayOfPixels = [[190,197,190], [202,204,200], [207,214,210], [211,214,211], [205,207,207]];
 var maximumColorCount = 4;
 
 var colorMap = quantize(arrayOfPixels, maximumColorCount);
 
-colorMap.palette();
+
+`````
+
+`arrayOfPixels` - An array of pixels (represented as [R,G,B arrays]) to quantize
+`maxiumColorCount` - The maximum number of colours allowed in the reduced palette
+
+####Reduced Palette
+
+The `.palette()` method returns an array that contains the reduced color palette.
+
+`````javascript
+
+// Returns the reduced palette
+colorMap.palette(); 
 // [[204, 204, 204], [208,212,212], [188,196,188], [212,204,196]]
 
-var arrayOfReducedPixels = myPixels.map(function(p) {
-	return cmap.map(p);
-});
 
-arrayOfReducedPixels;
-// [[188,196,188], [204,204,204], [208,212,212], [208,212,212], [204,204,204]]
+`````
 
+####Quantized image
 
-colorMap.map();
+The `.map(pixel)` maps an individual pixel to the reduced color palette.
+
+`````javascript
+
+// Returns the reduced pixel
+colorMap.map(arrayOfPixels[0]);
+// [188,196,188]
 
 `````
 
