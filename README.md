@@ -15,26 +15,28 @@ The function returns a color map you can use to map original pixels to the reduc
 
 ###Example
 
-		var quantize = require('quantize');
+`````javascript
+var quantize = require('quantize');
 
-		// array of pixels as [R,G,B] arrays
-		var arrayOfPixels = [[190,197,190], [202,204,200], [207,214,210], [211,214,211], [205,207,207]];
-		var maximumColorCount = 4;
+// array of pixels as [R,G,B] arrays
+var arrayOfPixels = [[190,197,190], [202,204,200], [207,214,210], [211,214,211], [205,207,207]];
+var maximumColorCount = 4;
 
-		var colorMap = quantize(arrayOfPixels, maximumColorCount);
+var colorMap = quantize(arrayOfPixels, maximumColorCount);
 
-		colorMap.palette();
-		// [[204, 204, 204], [208,212,212], [188,196,188], [212,204,196]]
+colorMap.palette();
+// [[204, 204, 204], [208,212,212], [188,196,188], [212,204,196]]
 
-		var arrayOfReducedPixels = myPixels.map(function(p) {
-    		return cmap.map(p);
-		});
+var arrayOfReducedPixels = myPixels.map(function(p) {
+	return cmap.map(p);
+});
 
-		arrayOfReducedPixels;
-		// [[188,196,188], [204,204,204], [208,212,212], [208,212,212], [204,204,204]]
+arrayOfReducedPixels;
+// [[188,196,188], [204,204,204], [208,212,212], [208,212,212], [204,204,204]]
 
 
-		colorMap.map();
+colorMap.map();
+`````
 
 Author
 ------
