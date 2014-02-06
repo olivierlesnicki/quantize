@@ -42,7 +42,8 @@ The `.map(pixel)` maps an individual pixel to the reduced color palette.
 `````javascript
 // Returns the reduced pixel
 colorMap.map(arrayOfPixels[0]);
-// [188,196,188]
+// [188,196,188] `````
+
 
 Author
 ------
