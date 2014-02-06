@@ -6,7 +6,7 @@ Node.js module for color quantization, based on Leptonica.
 Install
 -------
 
-		npm install quantize
+	npm install quantize
 
 Quick Overview
 --------------
@@ -16,6 +16,7 @@ The function returns a color map you can use to map original pixels to the reduc
 ###Example
 
 `````javascript
+
 var quantize = require('quantize');
 
 // array of pixels as [R,G,B] arrays
@@ -36,6 +37,7 @@ arrayOfReducedPixels;
 
 
 colorMap.map();
+
 `````
 
 Author
