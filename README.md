@@ -26,9 +26,10 @@ var colorMap = quantize(arrayOfPixels, maximumColorCount);
 `````
 
 `arrayOfPixels` - An array of pixels (represented as [R,G,B arrays]) to quantize
+
 `maxiumColorCount` - The maximum number of colours allowed in the reduced palette
 
-####Reduced Palette
+#####Reduced Palette
 
 The `.palette()` method returns an array that contains the reduced color palette.
 
@@ -41,7 +42,7 @@ colorMap.palette();
 
 `````
 
-####Quantized image
+#####Reduced pixel
 
 The `.map(pixel)` maps an individual pixel to the reduced color palette.
 
