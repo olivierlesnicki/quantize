@@ -25,9 +25,8 @@ var colorMap = quantize(arrayOfPixels, maximumColorCount);
 
 `````
 
-`arrayOfPixels` - An array of pixels (represented as [R,G,B arrays]) to quantize
-
-`maxiumColorCount` - The maximum number of colours allowed in the reduced palette
+* `arrayOfPixels` - An array of pixels (represented as [R,G,B arrays]) to quantize
+* `maxiumColorCount` - The maximum number of colours allowed in the reduced palette
 
 #####Reduced Palette
 
