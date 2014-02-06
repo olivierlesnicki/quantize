@@ -37,7 +37,7 @@ colorMap.palette();
 
 #####Reduced pixel
 
-The `.map(pixel)` maps an individual pixel to the reduced color palette.
+The `.map(pixel)` method maps an individual pixel to the reduced color palette.
 
 `````javascript
 // Returns the reduced pixel
