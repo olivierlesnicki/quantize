@@ -1,6 +1,6 @@
 {
     "name": "quantize",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A node.js module for color quantization, based on Leptonica.",
     "homepage": "https://github.com/olivierlesnicki/quantize",
     "author": "Olivier Lesnicki (https://github.com/olivierlesnicki)",
@@ -27,7 +27,7 @@
         "url": "git://github.com/olivierlesnicki/quantize.git"
     },
     "engines": {
-        "node": ">=0.6.0"
+        "node": ">=0.10.21"
     },
     "dependencies": {},
     "devDependencies": {},
