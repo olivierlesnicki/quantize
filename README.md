@@ -12,7 +12,7 @@ Install
 Quick Overview
 --------------
 
-###Usage
+### Usage
 
 `````javascript
 var quantize = require('quantize');
@@ -26,7 +26,7 @@ var colorMap = quantize(arrayOfPixels, maximumColorCount);
 * `arrayOfPixels` - An array of pixels (represented as [R,G,B arrays]) to quantize
 * `maxiumColorCount` - The maximum number of colours allowed in the reduced palette
 
-#####Reduced Palette
+##### Reduced Palette
 
 The `.palette()` method returns an array that contains the reduced color palette.
 
@@ -36,7 +36,7 @@ colorMap.palette();
 // [[204, 204, 204], [208,212,212], [188,196,188], [212,204,196]]
 `````
 
-#####Reduced pixel
+##### Reduced pixel
 
 The `.map(pixel)` method maps an individual pixel to the reduced color palette.
 
@@ -55,7 +55,7 @@ Contributors
 ------------
 
 * [Nick Rabinowitz](https://github.com/nrabinowitz)
-* [Mike Bostock] (https://github.com/mbostock)
+* [Mike Bostock](https://github.com/mbostock)
 
 License
 -------
