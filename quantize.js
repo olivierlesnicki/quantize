@@ -471,7 +471,7 @@ var MMCQ = (function() {
         }
 
         // next set - generate the median cuts using the (npix * vol) sorting.
-        iter(pq2, maxcolors - pq2.size());
+        iter(pq2, maxcolors - pq2.size() + 1);
 
         // calculate the actual colors
         var cmap = new CMap();
