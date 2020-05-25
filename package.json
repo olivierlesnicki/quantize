@@ -30,6 +30,10 @@
         "node": ">=0.10.21"
     },
     "dependencies": {},
-    "devDependencies": {},
-    "scripts": {}
+    "devDependencies": {
+        "mocha": "^7.1.2"
+    },
+    "scripts": {
+        "test": "mocha"
+    }
 }
